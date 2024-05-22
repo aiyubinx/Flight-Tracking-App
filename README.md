@@ -1,36 +1,49 @@
-Flight Tracking App
+# Flight Tracking App
+
+## Introduction
 
 This project is a Flight Tracking Application that provides real-time flight information.
 
 ---------------------------------
-Prerequisites
+## Prerequisites
 
-Visual Studio Code 
-Android Studio 
-Xcode
-Npm
-Node
-Ignite CLI 
+This is a React Native project so requires working react native environment to run.
 
------------------------------------------------
-Installation process
+[React Native](https://reactnative.dev/docs/environment-setup)
 
-1) Unzip project
+[Visual Studio Code](https://reactnative.dev/docs/environment-setup)
 
-2) Install node modules 	
-yarn install
+[Android Studio ](https://docs.expo.dev/get-started/set-up-your-environment/?platform=android&device=simulated&mode=development-build)
+
+[Xcode](https://docs.expo.dev/get-started/set-up-your-environment/?platform=ios&device=simulated&mode=development-build)
+
+[Ignite CLI](https://github.com/infinitered/ignite)
 
 -----------------------------------------------
-Build and Run Application
+## Project Setup
+
+Clone the repository and install dependencies:
+
+```
+git clone https://github.com/aiyubinx/Flight-Tracking-App.git
+cd Flight-Tracking-App
+Install node modules - yarn install
+```
+
+-----------------------------------------------
+## Build and Run Application
 
 To run project use NPM scripts or run below command
 
+```
 npx expo start --android
 npx expo start --ios
+```
 
 -----------------------------------------------
-Project Structure
+## Project Structure
 
+```
 app
 ├── components
 ├── config
@@ -43,8 +56,13 @@ app
 ├── utils 
 └── app.tsx - Application entry point
 
----------------------------------------------------
-API Routes
+```
 
-To get Flight Information by flight_icao number used this api - `http://api.aviationstack.com/v1/flights?access_key=1ef5aa8c887a3beed47f6fbf0ace4b11&flight_status=active&flight_icao=${fightIcaoNo}`,
+---------------------------------------------------
+## API Routes
+
+To get Flight Information by flight_icao number used this api - 
+```
+http://api.aviationstack.com/v1/flights?access_key=1ef5aa8c887a3beed47f6fbf0ace4b11&flight_status=active&flight_icao=${fightIcaoNo}
+```
   
